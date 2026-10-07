@@ -1,0 +1,28 @@
+/* EthosQuest design tokens. Light, warm ground; ink for type; gold as the single accent. */
+.ethos-root { --ground: #F7F4EE; --sand: #EEE8DC; --ink: #132040; --line: rgba(19,32,64,0.14); --gold: #9E1B34; --gold-deep: #9E1B34; --gold-soft: #E4A3AE; --dark: #0B1422; font-family: 'Raleway', sans-serif; background: var(--ground); color: var(--ink); position: relative; min-height: 100vh; margin: -8px; isolation: isolate; overflow: clip; -webkit-font-smoothing: antialiased; }
+@layer base {
+.ethos-root *, .ethos-root *::before, .ethos-root *::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: var(--line); }
+.ethos-root :where(h1,h2,h3,h4,p,figure,blockquote,dl,dd) { margin: 0; }
+.ethos-root :where(a) { color: inherit; text-decoration: none; }
+.ethos-root :where(button,input,textarea,select) { font: inherit; border-radius: 0; }
+.ethos-root :where(button) { cursor: pointer; }
+.ethos-root :where(img,video) { display: block; max-width: 100%; }
+.ethos-root :where(ul,ol) { list-style: none; margin: 0; padding: 0; }
+}
+.ethos-root .font-accent { font-family: 'Cinzel', serif; }
+.ethos-root .font-sans { font-family: 'Raleway', sans-serif; }
+.ethos-root :where(h1,h2,h3) { font-weight: 400; }
+.ethos-root :where(a,button,input,textarea,select):focus-visible { outline: 1px solid var(--gold-deep); outline-offset: 5px; }
+.ethos-root .ethos-underline { position: relative; width: fit-content; }
+.ethos-root .ethos-underline::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 1px; background: var(--gold-deep); transform: scaleX(0); transform-origin: left; transition: transform 500ms; }
+.ethos-root .ethos-underline:hover::after, .ethos-root .ethos-underline:focus-visible::after { transform: scaleX(1); }
+.ethos-root .ethos-input:focus + label, .ethos-root .ethos-input:not(:placeholder-shown) + label { transform: translateY(-22px); font-size: 10px; color: var(--gold-deep); }
+.ethos-root .ethos-mark { filter: brightness(0); opacity: .88; }
+.ethos-root .ethos-dark { background: var(--dark); color: #F7F4EE; }
+.ethos-root .ethos-dark .ethos-mark { filter: none; opacity: 1; }
+/* Top banner: brand blue with white type (ETHOS-2). Exact blue pending Samuel's confirmation. */
+.ethos-root .ethos-banner { --banner: var(--ink); color: #fff; }
+.ethos-root .ethos-banner .ethos-mark { filter: brightness(0) invert(1); opacity: 1; }
+.ethos-root .ethos-banner :where(a,button):focus-visible { outline-color: #fff; }
+.ethos-root .ethos-sand { background: var(--sand); }
+@media (prefers-reduced-motion: reduce) { .ethos-root *, .ethos-root *::before, .ethos-root *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
