@@ -7,7 +7,7 @@ export const basselProfile = {
  credential: 'ACC · International Coaching Federation',
  bio: [
   'Bassel has spent more than three decades in banking, private equity, and board leadership across the United States, the Middle East, and South Asia. He has built institutions from the ground up, led them through crisis, and served on the boards that oversee them.',
-  'He now coaches CEOs and advises family businesses and boards, bringing the perspective of someone who has carried the weight of consequential decisions himself.',
+  'He now coaches senior leaders and advises family businesses and boards, bringing the perspective of someone who has carried the weight of consequential decisions himself.',
  ],
 };
 

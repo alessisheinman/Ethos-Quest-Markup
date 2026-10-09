@@ -7,94 +7,81 @@ const o = (label: string, file: string, alt: string): EthosPhoto => ({ label, sr
 export const ethosPhotoOptions = {
  // Home: The Lens (portrait). "Are you living the life you think you are living?"
  lens: [
-  o('Reflection', 'lens-reflection', 'A man in a suit reflected in an office window'),
   o('Converging lines', 'lens-oculus', 'The white ribs of the Oculus converging overhead'),
-  o('Standing still', 'lens-standing-still', 'A woman standing still while a crowd moves past her'),
+  o('One World Trade through the trees', 'lens-wtc-trees', 'One World Trade Center framed by green trees on a sunny day'),
+  o('Looking up', 'lens-glass-towers', 'Looking up glass towers into bright clouds'),
  ],
  // For Leaders page: The Lens, different photos from the home page.
  ceoLens: [
-  o('Skyline at night', 'ceo-lens-nyc-night', 'A silhouette in a dark room overlooking the New York skyline at night'),
   o('Wall Street', 'ceo-lens-wall-street', 'A man in a suit on Wall Street beside the Stock Exchange flags'),
-  o('Yellow cab', 'ceo-lens-taxi', 'A man in a suit stepping into a New York yellow cab'),
+  o('Fifth Avenue', 'ceo-lens-fifth-ave', 'A smiling man in a suit by the Fifth Avenue street sign'),
+  o('Bryant Park', 'ceo-lens-bryant-park', 'A man in a suit by the Bryant Park subway entrance under green trees'),
  ],
  // About page hero: a thinking partner worthy of the moment.
  aboutHero: [
-  o('On a Manhattan street', 'about-hero-manhattan-street', 'Two professionals reviewing a document on a Manhattan street'),
-  o('Crossing downtown', 'about-hero-crossing', 'A man and a woman in suits crossing a downtown New York street'),
-  o('Walking and talking', 'about-hero-walking-talking', 'Two professionals in conversation walking through Manhattan'),
+  o('Near Hudson Yards', 'about-hero-hudson-yards', 'A man and a woman in conversation near Hudson Yards'),
+  o('At the subway entrance', 'about-hero-subway', 'Two colleagues talking at a New York subway entrance'),
  ],
  // Who We Serve landing page heroes, keyed by profile slug (see EthosAudiences.ts).
  'private-equity-ceos': [
   o('Wall Street', 'pe-wall-street', 'Two professionals talking outside the New York Stock Exchange'),
-  o('Hudson Yards', 'pe-hudson-yards', 'The glass towers of Hudson Yards in Manhattan'),
-  o('The tower at night', 'pe-tower-night', 'A Midtown office tower with its windows lit at night'),
+  o('Midtown from above', 'pe-midtown-skyline', 'The Midtown Manhattan skyline from high up on a clear day'),
+  o('Lower Manhattan', 'pe-lower-manhattan', 'The Lower Manhattan skyline under a blue sky'),
  ],
  'fund-managers': [
   o('The screen', 'fund-chart-screen', 'A man standing before a large chart display in a dark room'),
   o('The desk', 'fund-trading-desk', 'Two men discussing a position at a trading desk'),
   o('Wall Street', 'fund-wall-street', 'The Wall Street street sign in black and white'),
  ],
- 'family-office-leaders': [
-  o('Upper East Side', 'office-upper-east-side', 'An elegant limestone building on the Upper East Side'),
-  o('Central Park West', 'office-san-remo', 'The San Remo towers above Central Park in autumn'),
-  o('The townhouse', 'office-townhouse', 'A classic Manhattan townhouse facade'),
- ],
  'founders-scaling': [
-  o('By the Manhattan Bridge', 'founders-manhattan-bridge', 'A young founder working on a laptop with the Manhattan Bridge behind'),
-  o('On the Brooklyn Bridge', 'founders-brooklyn-bridge', 'A founder sitting on the Brooklyn Bridge with downtown towers behind'),
-  o('Empire State view', 'founders-empire-window', 'A founder sitting at a window facing the Empire State Building'),
+  o('Park Avenue in bloom', 'founders-park-ave-blossoms', 'Park Avenue in spring, cherry blossoms lining the street in the sun'),
+  o('Park Ave and 53rd', 'founders-park-ave-53rd', 'People crossing Park Avenue at East 53rd Street'),
  ],
- 'family-business-ceos': [
+ 'family-business-leaders': [
   o('The institution', 'family-katzs', 'A long-established family delicatessen on the Lower East Side'),
   o('The old sign', 'family-cafeteria', 'The faded sign of an old red-brick New York cafeteria'),
   o('The corner shop', 'family-corner-deli', 'A corner deli beneath fire escapes on a New York street'),
  ],
- 'ceos-facing-an-exit': [
-  o('The commute, one last time', 'exit-subway', 'A man with a briefcase heading down into a New York subway station'),
-  o('Sunset downtown', 'exit-sunset', 'The sun setting behind the Lower Manhattan skyline'),
-  o('The old pier', 'exit-pier-dusk', 'Old pier posts in the water with the Manhattan skyline at dusk'),
+ 'leaders-facing-an-exit': [
+  o('Park and skyline', 'exit-park-skyline', 'A sunny park with the New York skyline beyond the trees'),
+  o('From a Brooklyn park', 'exit-brooklyn-park', 'Manhattan across the water from a green Brooklyn park'),
  ],
  // Methodology page hero: unmistakably New York.
  methodHero: [
-  o('One World Trade at sunset', 'method-hero-one-wtc-window', 'A silhouette at a window facing One World Trade Center at sunset'),
-  o('Empire State at dusk', 'method-hero-empire-dusk', 'The Empire State Building lit at dusk above Midtown Manhattan'),
-  o('Through the window', 'method-hero-empire-window', 'Midtown Manhattan and the Empire State Building framed by tall windows'),
+  o('Lower Manhattan', 'method-hero-lower-manhattan', 'Lower Manhattan across the water under a blue sky'),
+  o('Brooklyn Bridge from above', 'method-hero-brooklyn-bridge', 'The Brooklyn Bridge and Lower Manhattan from above on a sunny day'),
+  o('Stone and blue sky', 'method-hero-stone-building', 'A classic New York stone building against a deep blue sky'),
  ],
  // Home: Who We Serve (background).
  who: [
   o('Boardroom, dark', 'who-boardroom-dark', ''),
-  o('Boardroom, bright', 'who-boardroom-bright', ''),
-  o('Signing', 'who-signing', ''),
+  o('Midtown from above', 'who-midtown-above', ''),
+  o('Central Park from above', 'who-central-park-above', ''),
  ],
  // For Leaders page hero: the view from the top.
  ceoHero: [
-  o('Window over the city', 'ceo-hero-nyc-window', 'A person at a tall window looking down over New York City'),
-  o('Empire State', 'ceo-hero-empire-state', 'A man in a suit with the Empire State Building behind him'),
-  o('High above', 'ceo-hero-high-above', 'A woman silhouetted at a window high above New York'),
+  o('Rooftop terrace', 'ceo-hero-rooftop-terrace', 'A rooftop terrace facing the Midtown skyline on a sunny day'),
+  o('Empire State over the rooftops', 'ceo-hero-empire-rooftops', 'The Empire State Building rising over Manhattan rooftops under a blue sky'),
  ],
  // Home: The Core Capacity (dark background).
  capacity: [
-  o('Conversation', 'capacity-conversation', ''),
   o('Storm over the skyline', 'capacity-storm', ''),
-  o('One lit window', 'capacity-lit-window', ''),
+  o('Sun through the clouds', 'capacity-sun-clouds', ''),
+  o('Brooklyn Bridge Park at sunset', 'capacity-brooklyn-sunset', ''),
  ],
  // Methodology page: The Core Capacity, different photos from the home page.
  capacityMethod: [
-  o('Conversation', 'capacity-method-conversation', ''),
-  o('Storm over Manhattan', 'capacity-method-storm', ''),
-  o('Lit windows', 'capacity-method-lit-windows', ''),
+  o('Manhattan from above', 'capacity-method-manhattan-above', ''),
+  o('Walking toward the skyline', 'capacity-method-walking-skyline', ''),
  ],
  // Home: The Methodology panel.
  panelMethod: [
   o('Stock Exchange columns', 'panel-method-nyse', ''),
-  o('Stock Exchange entrance', 'panel-method-nyse-entrance', ''),
-  o('Writing', 'panel-method-writing', ''),
  ],
  // Home: Private Inquiry panel.
  panelInquiry: [
-  o('Private door', 'panel-inquiry-door', ''),
-  o('Coffee for two', 'panel-inquiry-coffee', ''),
-  o('Phone face down', 'panel-inquiry-phone', ''),
+  o('Public Library lion', 'panel-inquiry-library-lion', ''),
+  o('Grand Central', 'panel-inquiry-grand-central', ''),
  ],
 };
 export type EthosPhotoSlot = keyof typeof ethosPhotoOptions;

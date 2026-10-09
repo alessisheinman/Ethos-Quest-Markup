@@ -41,7 +41,7 @@ export default function EthosAudiencePage({ audience }: { audience: EthosAudienc
 
   <EthosSection>
    <EthosHeading eyebrow="Who We Serve" title="Other leaders we work with." />
-   <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{others.map(other => <a key={other.slug} href={withBase(audiencePath(other))} className={'group flex items-center justify-between gap-4 border p-5 text-[16px] transition-colors hover:border-[#9E1B34] hover:text-[#9E1B34] ' + line}>{other.name}<ArrowUpRight size={17} strokeWidth={1.4} className="shrink-0" /></a>)}</div>
+   <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{others.map(other => <a key={other.slug} href={withBase(audiencePath(other))} className={'group flex items-center justify-between gap-4 border p-5 text-[16px] transition-colors hover:border-[#9E1B34] hover:text-[#9E1B34] ' + line}>{other.name}<ArrowUpRight size={17} strokeWidth={1.4} className="shrink-0" /></a>)}</div>
   </EthosSection>
 
   <EthosCta />

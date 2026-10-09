@@ -27,7 +27,7 @@ export const methodCapacity = {
 
 export const methodClassification = [
  ['Transformational', 'The work changes how leaders see themselves and their lives, not just how they perform.'],
- ['Adaptive', 'Not a fixed protocol. Custom-tailored in real time to how each CEO shows up, what they need, and how deep they can go.'],
+ ['Adaptive', 'Not a fixed protocol. Custom-tailored in real time to how each leader shows up, what they need, and how deep they can go.'],
  ['Developmental', 'The engagement unfolds over time, building capacity for self-awareness, decision quality, and integrity across every domain of life.'],
  ['Integrative', 'The coach draws on multiple modalities, frameworks, and disciplines based on what the client needs, rather than a single school of thought.'],
  ['Scientifically grounded', 'The diagnostic baseline relies on validated psychometric instruments, not opinion or intuition alone.'],
@@ -35,8 +35,8 @@ export const methodClassification = [
 
 export const methodFoundations = [
  ['A Secure Base', 'Safety that makes challenge possible', 'The coach listens for what holds leaders hostage: unresolved fears, grief, and conflict that constrain performance and clarity.'],
- ['Positive Psychology', 'Flourishing across every domain', 'The coach works across all domains of a CEO’s life, not just the professional role, because human flourishing is not compartmentalized.'],
- ['The Quality of Attention', 'Listening that lets leaders think', 'The quality of a person’s thinking depends on the quality of attention they receive. The coach holds space so the CEO can think for themselves.'],
+ ['Positive Psychology', 'Flourishing across every domain', 'The coach works across all domains of a leader’s life, not just the professional role, because human flourishing is not compartmentalized.'],
+ ['The Quality of Attention', 'Listening that lets leaders think', 'The quality of a person’s thinking depends on the quality of attention they receive. The coach holds space so the executive can think for themselves.'],
  ['A Life Well Lived', 'Alignment over optimization', 'Life-level questions, not just career questions, because coaching is about alignment rather than optimization.'],
  ['Leadership Under Extreme Adversity', 'The founder’s own journey', 'Institutions built from nothing, led through war, rebuilt after loss. The pillar that separates EthosQuest from academic coaching models.'],
 ];
@@ -76,7 +76,7 @@ export const methodPhases = [
 
 export const methodGaps = {
  title: 'Integrity gaps.',
- body: 'The coach is not looking for a specific type of problem. Not trauma, not family dynamics, not operational dysfunction. The coach is looking for one thing: places where what you say you value does not match how you are actually living. We call them wobbles. Every CEO has them. They are what make us human. Most CEOs want to understand and conquer them.',
+ body: 'The coach is not looking for a specific type of problem. Not trauma, not family dynamics, not operational dysfunction. The coach is looking for one thing: places where what you say you value does not match how you are actually living. We call them wobbles. Every senior leader has them. They are what make us human. Most want to understand and conquer them.',
  principle: 'If the insight comes from the coach, it is opinion. If it comes from your own data, it is truth.',
 };
 
@@ -118,6 +118,14 @@ export const methodSocratic = {
  questions: ['Why do you think change is needed?', 'Where do you see the inconsistency?', 'Is this it, or could it be something else?', 'If it is that, what are the implications for everything else?', 'Go deeper.'],
 };
 
+// ETHOS-5: the Methodology page is distilled to three core tenets, kept high level so it does not give the method away.
+// Draft choice pending Samuel's confirmation with Alexia and Bassel; swap a tenet by editing its entry.
+export const methodTenets = [
+ ['Alignment, not performance.', 'The work is not about getting leaders to do more, faster. It is about making sure the choices you make, in business and in life, are coherent with who you actually are and what you want your life to be.', 'Are you living the life you think you are living?'],
+ ['Facing reality without collapsing.', 'A coach who will not flinch, rush past the hard thing, or reach for a quick fix. They hold steady while you look at what you have been avoiding, so you can see it clearly and decide honestly.', 'The coach helps people face reality without collapsing.'],
+ ['Mastery, not elimination.', 'Old patterns do not disappear, and under pressure they return. The work is not about getting rid of them. It is learning to recognize them, name them, and choose how to respond.', 'You do not slay the dragons. You learn how to feed them.'],
+];
+
 export const methodDragon = {
  statement: 'You do not slay the dragons. You learn how to feed them: how much, and when.',
  body: 'A saboteur does not disappear. A need for approval does not vanish. What changes is your relationship to it. You see it. You name it. You understand what triggers it. Under extreme stress, without sleep, on the road, in crisis, the old patterns re-emerge. That is not failure. That is human. The work has succeeded when you can recognize the pattern returning, name it, and choose how to respond rather than reacting on autopilot.',
@@ -142,14 +150,14 @@ export const methodProprietary = [
 ];
 
 export const methodPatterns = [
- ['The CEO who cannot have hard conversations', 'Underperformers stay too long. High performers leave. Culture becomes conflict-avoidant. Decisions get deferred. The organization loses speed and accountability.', 'Underperformers are coached out with dignity. High performers feel seen and stay. Accountability returns.'],
- ['The CEO who cannot stop starting things', 'Too many initiatives running at once. Resources spread thin. Nothing gets finished. Strategic focus is impossible. The team is exhausted.', 'Projects close. Resources concentrate. Strategic focus sharpens. Revenue and margin improve because energy goes where it matters.'],
- ['The CEO who seeks approval rather than leading', 'Strategic decisions are made to please a patriarch, a board, or a market rather than to build. Opportunities are missed. The organization follows a leader who is following someone else.', 'Decisions come from the CEO’s own clarity. Strategic direction aligns with actual conviction. Decisions become faster, more coherent, more confident.'],
- ['The CEO who cannot delegate', 'Bottlenecks at the top. Senior leaders feel untrusted and disempowered. The organization cannot scale. The CEO burns out. Succession is impossible.', 'The CEO learns to trust selectively. Senior leaders step up. The organization scales. The CEO’s time goes to the highest-leverage decisions.'],
+ ['The leader who cannot have hard conversations', 'Underperformers stay too long. High performers leave. Culture becomes conflict-avoidant. Decisions get deferred. The organization loses speed and accountability.', 'Underperformers are coached out with dignity. High performers feel seen and stay. Accountability returns.'],
+ ['The executive who cannot stop starting things', 'Too many initiatives running at once. Resources spread thin. Nothing gets finished. Strategic focus is impossible. The team is exhausted.', 'Projects close. Resources concentrate. Strategic focus sharpens. Revenue and margin improve because energy goes where it matters.'],
+ ['The leader who seeks approval rather than leading', 'Strategic decisions are made to please a patriarch, a board, or a market rather than to build. Opportunities are missed. The organization follows a leader who is following someone else.', 'Decisions come from the leader’s own clarity. Strategic direction aligns with actual conviction. Decisions become faster, more coherent, more confident.'],
+ ['The senior leader who cannot delegate', 'Bottlenecks at the top. The leadership team feels untrusted and disempowered. The organization cannot scale. The leader burns out. Succession is impossible.', 'The leader learns to trust selectively. The leadership team steps up. The organization scales. Their time goes to the highest-leverage decisions.'],
  ['The CEO who performs instead of leading', 'Impressive in public, hollow in private. Decisions made for optics rather than impact. The team senses the inauthenticity and responds with compliance rather than commitment.', 'The CEO stops performing and starts being present. Commitment deepens. Trust builds. Strategic decisions improve.'],
 ];
 
-export const methodMultiplier = 'When the CEO changes, the business changes. Not because anyone restructured the organization, but because the person making every critical decision is now thinking more clearly, deciding more honestly, and leading more authentically.';
+export const methodMultiplier = 'When the leader changes, the business changes. Not because anyone restructured the organization, but because the person making every critical decision is now thinking more clearly, deciding more honestly, and leading more authentically.';
 
 export const methodStructure = [
  ['Three to four sessions a month', 'Structured meetings on a weekly cadence. In the first ninety days this is a floor, not a ceiling.'],

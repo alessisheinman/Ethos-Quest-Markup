@@ -12,7 +12,7 @@ import {
  methodWhy, methodLens, methodCeo, methodCapacity, methodClassification, methodFoundations, methodPhases,
  methodGaps, methodGapMap, methodPacing, methodSignals, methodSequence, methodSocratic, methodDragon,
  methodDistinctions, methodCoreDistinction, methodProprietary, methodPatterns, methodMultiplier,
- methodStructure, methodChange, methodArcs, methodGraduation, methodReadiness, methodValues, methodStance, methodOrigin, methodHuman,
+ methodStructure, methodChange, methodArcs, methodGraduation, methodReadiness, methodValues, methodStance, methodOrigin, methodHuman, methodTenets,
 } from './EthosMethod';
 import { basselProfile, basselFigures, basselRecognition, basselCareer } from './EthosBassel';
 import { usePhotoOption } from './EthosPhotoPicker';
@@ -76,11 +76,11 @@ export function EthosCapacity({ full = false }: { full?: boolean }) {
  </section>;
 }
 
-/* The business case: five CEO patterns, expandable. */
+/* The business case: five leadership patterns, expandable. */
 export function EthosPatterns({ full = false }: { full?: boolean }) {
  const [active, setActive] = useState<number | null>(full ? 0 : null);
  return <section className={space + (full ? ' ethos-sand' : '')}><div className={wrap}>
-  <EthosReveal className="grid items-end gap-6 md:grid-cols-[1fr_340px]"><div><Kicker>The Business Case</Kicker><h2 className={h2 + ' mt-5 max-w-[760px]'}>When the CEO changes, the business changes.</h2></div><p className={small + ' max-w-[320px]'}>Five integrity gaps we see in senior leaders, the cost each carries, and what happens when it closes.</p></EthosReveal>
+  <EthosReveal className="grid items-end gap-6 md:grid-cols-[1fr_340px]"><div><Kicker>The Business Case</Kicker><h2 className={h2 + ' mt-5 max-w-[760px]'}>When the leader changes, the business changes.</h2></div><p className={small + ' max-w-[320px]'}>Five integrity gaps we see in senior leaders, the cost each carries, and what happens when it closes.</p></EthosReveal>
   <div className={'mt-12 border-t ' + line}>{methodPatterns.map(([title, cost, closes], i) => <div key={title} className={'border-b ' + line}><h3><button id={'pattern-' + i} aria-expanded={active === i} aria-controls={'pattern-panel-' + i} onClick={() => setActive(active === i ? null : i)} className="group flex w-full items-center justify-between gap-8 bg-transparent py-6 text-left text-[#132040] transition-colors hover:text-[#9E1B34]"><span className="text-[22px] leading-[1.3] md:text-[28px]">{title}</span><motion.span animate={{ rotate: active === i ? 45 : 0 }} className="shrink-0 text-[#9E1B34]"><Plus size={24} strokeWidth={1.4} /></motion.span></button></h3>
    <AnimatePresence initial={false}>{active === i && <motion.div key={'p' + i} id={'pattern-panel-' + i} role="region" aria-labelledby={'pattern-' + i} initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.5, ease: ethosEase }} className="overflow-hidden"><div className="grid gap-8 pb-9 md:grid-cols-2 md:gap-16"><div><Kicker>The cost</Kicker><p className={small + ' mt-4'}>{cost}</p></div><div><Kicker>When the gap closes</Kicker><p className="mt-4 text-[15px] leading-[1.75] text-[#132040]/90">{closes}</p></div></div></motion.div>}</AnimatePresence>
   </div>)}</div>
@@ -144,12 +144,20 @@ export function EthosDragon() {
  return <section className={space + ' ethos-sand border-y ' + line}><EthosReveal className="mx-auto max-w-[900px] text-center"><Kicker>Mastery, Not Elimination</Kicker><h2 className="font-accent mt-8 text-[30px] leading-[1.25] md:text-[42px]">{methodDragon.statement}</h2><p className={body + ' mx-auto mt-10 max-w-[680px]'}>{methodDragon.body}</p></EthosReveal></section>;
 }
 
+/* Methodology page: the three core tenets (ETHOS-5). */
+export function EthosTenets() {
+ return <section className={space}><div className={wrap}>
+  <EthosReveal className="max-w-[760px]"><Kicker>Three Core Tenets</Kicker><h2 className={h2 + ' mt-5'}>What the work rests on.</h2><p className={body + ' mt-8 max-w-[620px]'}>Every engagement is shaped around the leader in front of us. Three convictions hold it together.</p></EthosReveal>
+  <ol className={'mt-14 grid border-t lg:grid-cols-3 ' + line}>{methodTenets.map(([title, text, line2], i) => <EthosReveal key={title} delay={i * 0.08} className={'border-b py-10 lg:border-b-0 lg:px-10 lg:first:pl-0 lg:last:pr-0 ' + (i > 0 ? 'lg:border-l ' : '') + line}><li className="flex h-full flex-col"><p className="font-accent text-[44px] leading-none text-[#9E1B34] md:text-[52px]">{String(i + 1).padStart(2, '0')}</p><h3 className="font-accent mt-6 text-[26px] leading-[1.2] md:text-[30px]">{title}</h3><p className={small + ' mt-5 flex-1'}>{text}</p><p className="mt-8 border-t border-[#132040]/12 pt-6 text-[17px] italic leading-[1.6] text-[#132040]/80">{line2}</p></li></EthosReveal>)}</ol>
+ </div></section>;
+}
+
 /* Coaching, therapy, mentoring, consulting. */
 export function EthosDistinctionsGrid() {
  return <section className={space}><div className={wrap}>
   <EthosReveal className="max-w-[820px]"><Kicker>The Distinctions</Kicker><h2 className={h2 + ' mt-5'}>Coaching. Not therapy, mentoring, or consulting.</h2></EthosReveal>
   <div className="mt-12 grid gap-px bg-[#132040]/12 md:grid-cols-2 lg:grid-cols-4">{methodDistinctions.map(([name, concern, body], i) => { const us = i === methodDistinctions.length - 1; return <EthosReveal key={name} delay={i * 0.07} className={'flex flex-col p-8 lg:p-9 ' + (us ? 'bg-[#132040] text-[#F7F4EE]' : 'bg-[#F7F4EE]')}><p className={'font-accent text-[12px] tracking-[0.24em] ' + (us ? 'normal-case ' : 'uppercase ') + (us ? 'text-[#E4A3AE]' : 'text-[#9E1B34]')}>{name}</p><h3 className="mt-8 text-[24px] leading-[1.3]">{concern}</h3><p className={'mt-5 text-[15px] leading-[1.75] ' + (us ? 'text-[#F7F4EE]/80' : 'text-[#132040]/70')}>{body}</p></EthosReveal>; })}</div>
-  <EthosReveal className="mt-12 max-w-[840px]"><Quote>{methodCoreDistinction}</Quote><p className={small + ' mt-6 max-w-[660px]'}>The difference is not subtle. It requires the coach to go deeper, stay longer, and resist the urge to solve quickly. It requires the client to face things they may have been avoiding for years. And it produces a different kind of result: not just better performance, but genuine alignment between what a CEO says matters and how they actually live.</p></EthosReveal>
+  <EthosReveal className="mt-12 max-w-[840px]"><Quote>{methodCoreDistinction}</Quote><p className={small + ' mt-6 max-w-[660px]'}>The difference is not subtle. It requires the coach to go deeper, stay longer, and resist the urge to solve quickly. It requires the client to face things they may have been avoiding for years. And it produces a different kind of result: not just better performance, but genuine alignment between what a senior leader says matters and how they actually live.</p></EthosReveal>
  </div></section>;
 }
 

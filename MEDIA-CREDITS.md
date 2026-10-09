@@ -28,30 +28,24 @@ Notebook image edited using built-in image generation: replace original cover br
 All Pexels drone footage. Each: first 20s, 1920x1080 crop, 30fps, muted, H.264 encoded locally; poster is the first frame. Files in public/media/hero/.
 - fidi-golden-hour: ArtHouse Studio, https://www.pexels.com/video/aerial-shot-of-a-city-view-8491139/
 - fidi-towers: https://www.pexels.com/video/stunning-new-york-city-skyline-aerial-view-37493554/
-- fidi-night: https://www.pexels.com/video/aerial-view-of-new-york-city-at-night-5727833/
-- fidi-harbor: https://www.pexels.com/video/19449306/
 - fidi-towers-daylight: https://www.pexels.com/video/dazzling-aerial-view-of-manhattan-skyline-37493550/
-- fidi-blue-hour: https://www.pexels.com/video/36934433/
-- fidi-bridge-night: https://www.pexels.com/video/5838634/
 - fidi-one-wtc: https://www.pexels.com/video/majestic-new-york-city-skyline-with-one-world-trade-center-36772022/
-- fidi-overcast: https://www.pexels.com/video/view-of-skyscrapers-from-a-distance-4961624/
 - fidi-summer-harbor: https://www.pexels.com/video/29625079/
 
 ## 2026-10-07 Placeholder photo replacements (pending Samuel's picks)
 Three Pexels candidates per slot, resized to 2000px wide, in public/media/options/. Slots and labels in app/ethos/EthosPhotoOptions.ts.
-- Home, The Lens: lens-reflection https://www.pexels.com/photo/7643785/ · lens-oculus https://www.pexels.com/photo/9294718/ · lens-standing-still https://www.pexels.com/photo/26892611/ (Istanbul)
-- Methodology hero: method-hero-one-wtc-window https://www.pexels.com/photo/35081254/ · method-hero-empire-dusk https://www.pexels.com/photo/4451508/ · method-hero-empire-window https://www.pexels.com/photo/13713060/
-- Home, Who We Serve: who-boardroom-dark https://www.pexels.com/photo/3906592/ · who-boardroom-bright https://www.pexels.com/photo/22718136/ · who-signing https://www.pexels.com/photo/8730998/
-- For Leaders hero: ceo-hero-nyc-window https://www.pexels.com/photo/3625023/ · ceo-hero-empire-state https://www.pexels.com/photo/4964953/ · ceo-hero-high-above https://www.pexels.com/photo/9582411/
-- Home, The Core Capacity: capacity-conversation https://www.pexels.com/photo/8371735/ · capacity-storm https://www.pexels.com/photo/2362882/ · capacity-lit-window https://www.pexels.com/photo/35188667/ (Warsaw)
-- Methodology, The Core Capacity: capacity-method-conversation https://www.pexels.com/photo/7964495/ · capacity-method-storm https://www.pexels.com/photo/9697598/ · capacity-method-lit-windows https://www.pexels.com/photo/31570312/
-- Home, Methodology panel: panel-method-nyse https://www.pexels.com/photo/8878493/ · panel-method-nyse-entrance https://www.pexels.com/photo/28254662/ · panel-method-writing https://www.pexels.com/photo/210661/
-- Home, Private Inquiry panel: panel-inquiry-door https://www.pexels.com/photo/33630605/ (Budapest) · panel-inquiry-coffee https://www.pexels.com/photo/2575833/ · panel-inquiry-phone https://www.pexels.com/photo/1350462/
-- For Leaders, The Lens: ceo-lens-nyc-night https://www.pexels.com/photo/38455481/ · ceo-lens-wall-street https://www.pexels.com/photo/13801854/ · ceo-lens-taxi https://www.pexels.com/photo/13801870/
-- About hero: about-hero-manhattan-street https://www.pexels.com/photo/5669657/ · about-hero-crossing https://www.pexels.com/photo/4963388/ · about-hero-walking-talking https://www.pexels.com/photo/5668466/
-- Who We Serve, Private Equity CEOs: pe-wall-street https://www.pexels.com/photo/4964783/ · pe-hudson-yards https://www.pexels.com/photo/19342489/ · pe-tower-night https://www.pexels.com/photo/5928111/
+- Home, The Lens: lens-oculus https://www.pexels.com/photo/9294718/ · lens-wtc-trees https://www.pexels.com/photo/5062135/ · lens-glass-towers https://www.pexels.com/photo/6827843/
+- Methodology hero: method-hero-lower-manhattan https://www.pexels.com/photo/35990744/ · method-hero-brooklyn-bridge https://www.pexels.com/photo/9376591/ · method-hero-stone-building https://www.pexels.com/photo/36529132/
+- Home, Who We Serve: who-boardroom-dark https://www.pexels.com/photo/3906592/ · who-midtown-above https://www.pexels.com/photo/13069196/ · who-central-park-above https://www.pexels.com/photo/3359912/
+- For Leaders hero: ceo-hero-rooftop-terrace https://www.pexels.com/photo/7807605/ · ceo-hero-empire-rooftops https://www.pexels.com/photo/33323351/
+- Home, The Core Capacity: capacity-storm https://www.pexels.com/photo/2362882/ · capacity-sun-clouds https://www.pexels.com/photo/30462825/ · capacity-brooklyn-sunset https://www.pexels.com/photo/35318716/
+- Methodology, The Core Capacity: capacity-method-manhattan-above https://www.pexels.com/photo/28411371/ · capacity-method-walking-skyline https://www.pexels.com/photo/33190815/
+- Home, Methodology panel: panel-method-nyse https://www.pexels.com/photo/8878493/
+- Home, Private Inquiry panel: panel-inquiry-library-lion https://www.pexels.com/photo/1570607/ (mirrored so the lion faces left) · panel-inquiry-grand-central https://www.pexels.com/photo/1570604/
+- For Leaders, The Lens: ceo-lens-wall-street https://www.pexels.com/photo/13801854/ · ceo-lens-fifth-ave https://www.pexels.com/photo/4559741/ · ceo-lens-bryant-park https://www.pexels.com/photo/4559618/
+- About hero: about-hero-hudson-yards https://www.pexels.com/photo/8554356/ · about-hero-subway https://www.pexels.com/photo/4964763/
+- Who We Serve, Private Equity CEOs: pe-wall-street https://www.pexels.com/photo/4964783/ · pe-midtown-skyline https://www.pexels.com/photo/9304863/ · pe-lower-manhattan https://www.pexels.com/photo/20847397/
 - Who We Serve, Fund Managers: fund-chart-screen https://www.pexels.com/photo/7567522/ · fund-trading-desk https://www.pexels.com/photo/5831706/ · fund-wall-street https://www.pexels.com/photo/6015353/
-- Who We Serve, Family Office Leaders: office-upper-east-side https://www.pexels.com/photo/2768311/ · office-san-remo https://www.pexels.com/photo/11249961/ · office-townhouse https://www.pexels.com/photo/5845471/
-- Who We Serve, Founders Scaling: founders-manhattan-bridge https://www.pexels.com/photo/4560066/ · founders-brooklyn-bridge https://www.pexels.com/photo/1182825/ · founders-empire-window https://www.pexels.com/photo/4451510/
-- Who We Serve, Family Business CEOs: family-katzs https://www.pexels.com/photo/14134120/ (shows Katz's Delicatessen signage) · family-cafeteria https://www.pexels.com/photo/1652295/ · family-corner-deli https://www.pexels.com/photo/20846701/
-- Who We Serve, CEOs Facing an Exit: exit-subway https://www.pexels.com/photo/5647234/ · exit-sunset https://www.pexels.com/photo/24589224/ · exit-pier-dusk https://www.pexels.com/photo/35318714/
+- Who We Serve, Founders Scaling: founders-park-ave-blossoms https://unsplash.com/photos/gQVrjMnr_zE (Unsplash) · founders-park-ave-53rd https://unsplash.com/photos/3okb4QRgWgo (Unsplash)
+- Who We Serve, Family Business Leaders: family-katzs https://www.pexels.com/photo/14134120/ (shows Katz's Delicatessen signage) · family-cafeteria https://www.pexels.com/photo/1652295/ · family-corner-deli https://www.pexels.com/photo/20846701/
+- Who We Serve, Leaders Facing an Exit: exit-park-skyline https://www.pexels.com/photo/13399314/ · exit-brooklyn-park https://www.pexels.com/photo/28448969/

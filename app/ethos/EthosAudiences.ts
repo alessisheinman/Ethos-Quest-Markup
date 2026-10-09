@@ -1,7 +1,7 @@
 // Who We Serve profiles (ETHOS-9). Each profile is a card on the home page and a landing page at /who-we-serve/<slug>.
 // Draft copy for Alexia to rewrite. Each profile's hero photo options live in EthosPhotoOptions.ts under its slug.
 export type EthosAudience = {
- slug: 'private-equity-ceos' | 'fund-managers' | 'family-office-leaders' | 'founders-scaling' | 'family-business-ceos' | 'ceos-facing-an-exit';
+ slug: 'private-equity-ceos' | 'fund-managers' | 'founders-scaling' | 'family-business-leaders' | 'leaders-facing-an-exit';
  name: string;
  card: string;
  lines: [string, string];
@@ -57,28 +57,6 @@ export const ethosAudiences: EthosAudience[] = [
   ],
  },
  {
-  slug: 'family-office-leaders',
-  name: 'Family Office Leaders',
-  card: 'Stewarding wealth across generations, where every investment decision is also a family decision.',
-  lines: ['Family Office Leaders', 'Wealth, Family, and Legacy'],
-  lede: 'Leading a family office means balancing investment discipline with the expectations, relationships, and values of the family it serves. EthosQuest offers a private space to think through decisions where business and family cannot be separated.',
-  pressures: [
-   ['Every decision is personal', 'Investment choices touch inheritances, relationships, and identity. Few decisions are only financial.'],
-   ['More than one generation', 'The founder’s priorities and the next generation’s ambitions rarely line up neatly.'],
-   ['Governance without a playbook', 'Who decides, how, and with whose agreement often stays unwritten until it is tested.'],
-   ['Discretion', 'Many of the hardest questions cannot be discussed with the family, the staff, or peers.'],
-  ],
-  work: [
-   ['Clarity on your role', 'Whether you are a family member or a professional leader, understanding whose interests you serve and where your own judgment fits.'],
-   ['Preparing the transitions', 'Succession, the next generation’s entry, and the conversations that have been postponed for years.'],
-   ['Decisions aligned with values', 'Making sure the choices the office makes reflect what the family actually stands for.'],
-  ],
-  questions: [
-   ['I’m 60 and run my family’s office, and my children don’t want to take it over. Would coaching help?', 'Yes. The work holds the practical questions about succession alongside the personal ones: what you want your role to become, what you want to hand on, and how to talk about it with your family.'],
-   ['I’m a non-family executive leading a family office. How do I handle pressure from different family members?', 'By getting clear on your mandate and your own boundaries first. Coaching gives you a confidential place to work through the dynamics before they reach the boardroom.'],
-  ],
- },
- {
   slug: 'founders-scaling',
   name: 'Founders Scaling',
   card: 'Scaling from twenty million to three hundred million, with too many initiatives and too little finished.',
@@ -92,7 +70,7 @@ export const ethosAudiences: EthosAudience[] = [
   work: [
    ['Focus and finishing', 'Choosing fewer things and seeing them through, starting with your own calendar.'],
    ['The capacity to slow down', 'Learning to pause without feeling that the company will stall without you.'],
-   ['The CEO the next stage needs', 'Seeing which of your strengths still serve the company, and which now get in its way.'],
+   ['The leader the next stage needs', 'Seeing which of your strengths still serve the company, and which now get in its way.'],
   ],
   questions: [
    ['My company has tripled in two years and I’m busier than ever but less effective. Would coaching help?', 'Very often, yes. The work looks at where your attention is actually going and why, then helps you build the focus the next stage requires.'],
@@ -100,31 +78,33 @@ export const ethosAudiences: EthosAudience[] = [
   ],
  },
  {
-  slug: 'family-business-ceos',
-  name: 'Family Business CEOs',
-  card: 'Leading the institution a parent built, with decisions shaped by an approval no one asked for out loud.',
-  lines: ['Family Business CEOs', 'Whose Life Are You Living?'],
-  lede: 'Leading the institution a parent built, with decisions quietly shaped by an approval that was never asked for out loud. The work is about seeing whose life you are actually living, and choosing it.',
+  slug: 'family-business-leaders',
+  name: 'Family Business Leaders',
+  card: 'Leading what a family built, or stewarding its wealth, where every business decision is also a family decision.',
+  lines: ['Family Business Leaders', 'Whose Life Are You Living?'],
+  lede: 'Whether you run the company a parent founded or lead the office that stewards the family’s wealth, decisions are quietly shaped by expectations no one says out loud. The work is about seeing whose life you are actually living, and choosing it.',
   pressures: [
    ['An inherited standard', 'The business carries a parent’s expectations long after the handover, often without anyone saying so.'],
-   ['Family at the table', 'Siblings, spouses, and shareholders who are also relatives make every business decision a family one.'],
-   ['Succession in both directions', 'Taking over from the generation before while preparing for the one after.'],
+   ['Family at the table', 'Siblings, spouses, and shareholders who are also relatives make every business and investment decision a family one.'],
+   ['Succession in every direction', 'Taking over from the generation before while preparing for the one after, whose ambitions rarely line up neatly with yours.'],
+   ['Governance without a playbook', 'Who decides, how, and with whose agreement often stays unwritten until it is tested.'],
   ],
   work: [
    ['Seeing the patterns', 'Recognizing which choices are yours and which are inherited.'],
-   ['Choosing your own direction', 'Leading the business toward what you believe in, not only what was expected.'],
-   ['The difficult conversations', 'Preparing for the family discussions that have been postponed for years.'],
+   ['Clarity on your role', 'Whether you are family or a professional leader brought in to run things, understanding whose interests you serve and where your own judgment fits.'],
+   ['The difficult conversations', 'Preparing for the succession and family discussions that have been postponed for years.'],
   ],
   questions: [
    ['I took over my father’s company and still feel I’m running it for him. Is that something coaching addresses?', 'Yes. It is one of the most common starting points. The work helps you see where his expectations still shape your decisions, so you can choose which ones to keep.'],
+   ['I’m 60 and run my family’s office, and my children don’t want to take it over. Would coaching help?', 'Yes. The work holds the practical questions about succession alongside the personal ones: what you want your role to become, what you want to hand on, and how to talk about it with your family.'],
    ['My siblings and I disagree about the future of the family business. Can coaching help?', 'Coaching works with you, not with the family as a group. It can help you get clear on your own position and how to hold it in those conversations.'],
   ],
  },
  {
-  slug: 'ceos-facing-an-exit',
-  name: 'CEOs Facing an Exit',
+  slug: 'leaders-facing-an-exit',
+  name: 'Leaders Facing an Exit',
   card: 'Selling something you built is not a transaction. Part of you goes with it.',
-  lines: ['CEOs Facing an Exit', 'What Comes After'],
+  lines: ['Leaders Facing an Exit', 'What Comes After'],
   lede: 'Selling something you built is not a transaction. Part of you goes with it. The work holds the identity transition alongside the practical decisions, and stays present for what comes after.',
   pressures: [
    ['An identity tied to the company', 'For years, the business has answered the question of who you are.'],
